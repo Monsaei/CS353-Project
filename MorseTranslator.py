@@ -43,7 +43,7 @@ def char_to_morse(morse_fsm, character, tmp):
 
 # Function to play Morse Beep sounds
 def morse_beep (morse_code):
-     for morse_code in encoded:
+     for morse_code in morse_code:
           if morse_code == '.':
                playsound("MorseBeeps\dot.wav")
           elif morse_code == '-':
