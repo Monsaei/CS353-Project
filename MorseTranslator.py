@@ -1,7 +1,7 @@
 from playsound import playsound
 import time
 
-# Class declaration para sa fsm kuno ket tree naman tlga
+# Class declaration for Moore Machine
 class State:
     def __init__(self, char='', left=None, right=None):
         self.char= char
