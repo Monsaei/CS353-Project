@@ -15,7 +15,7 @@ morsetochar = tk.Tk()
 morsetochar.grab_set()
 morsetochar.configure(background="#4B0082")
 morsetochar.geometry("800x500")
-morsetochar.title("Morse Code to Plain Text")
+morsetochar.title("Morse Code to English Word/s")
 
 mframe = tk.Frame(morsetochar, bg = "#9370DB")
 mframe.place(relwidth = 0.8, relheight = 0.8, relx = 0.1, rely = 0.1)

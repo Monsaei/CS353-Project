@@ -24,7 +24,7 @@ chartomorse = tk.Tk()
 chartomorse.grab_set()
 chartomorse.configure(background="#4B0082")
 chartomorse.geometry("800x500")
-chartomorse.title("Plain Text to Morse Code")
+chartomorse.title("English Word/s to Morse Code")
 
 mframe = tk.Frame(chartomorse, bg = "#9370DB")
 mframe.place(relwidth = 0.8, relheight = 0.8, relx = 0.1, rely = 0.1)
@@ -32,17 +32,22 @@ mframe.place(relwidth = 0.8, relheight = 0.8, relx = 0.1, rely = 0.1)
 blankspace = tk.Label(mframe, bg="#9370DB")
 blankspace.pack()
 
-title = tk.Label(mframe, text = "Please Enter the Plaintext you want to translate to Morse Code:", font=('Helvetica', 16), bg="#9370DB", fg="white")
+title = tk.Label(mframe, text = "Please Enter the English Word/s you want to \n translate to Morse Code:", font=('Helvetica', 16), bg="#9370DB", fg="white")
 title.pack(padx=5, pady=5)
 
 input_str = tk.StringVar(chartomorse)
 input_morse = tk.Entry(mframe, textvariable=input_str , width = 50)
 input_morse.pack()
 
+title = tk.Label(mframe, text = "Note: Arabic numbers 0-9 can be added and symbols =, +, and /", font=('Helvetica', 10), bg="#9370DB", fg="white")
+title.pack(padx=5, pady=5)
+
 blankspace = tk.Label(mframe, bg="#9370DB")
 blankspace.pack()
 
-pltbtn= tk.Button(mframe, text = "Enter Plaintext", font=('Helvetica', 16), bg="#9370DB", fg="white", command =inputmorsedisp, state ='disabled')
+
+
+pltbtn= tk.Button(mframe, text = "Enter English Word/s", font=('Helvetica', 16), bg="#9370DB", fg="white", command =inputmorsedisp, state ='disabled')
 pltbtn.pack()
 
 def pltbtn_upd(*args):
